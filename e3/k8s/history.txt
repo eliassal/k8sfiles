@@ -1,0 +1,189 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.374 kubectl version
+   2        0.017 ls
+   3        0.005 cd k8s
+   4        0.010 ls
+   5       10.224 kubectl apply -f platform-depl.yaml
+   6        0.256 kubectl get deployments
+   7        0.258 kubectl get pods
+   8        0.374 kubectl get deployments
+   9        
+  13        0.211 kubectl get deployments
+  14        0.742 kubectl get pods
+  15        
+  16        1.056 kubectl apply -f platforms-np-srv.yaml
+  17        kubectl get services
+  21        
+  22       18.774 kubectl delete platformnpservice-srv
+  23        1.025 kubectl delete svc platformnpservice-srv
+  24        0.171 kubectl get deployments
+  25        8.278 kubectl delete platforms-depl
+  26        8.348 kubectl delete deplyment platforms-depl
+  27        0.298 kubectl delete deployment platforms-depl
+  28        0.480 docker ps -a
+  29        5.117 docker run -p 8080:80 -d eliassal/platformservice
+  30        3.129 docker stop 38535
+  31        0.607 kubectl apply -f platform-depl.yaml
+  32        1.130 kubectl apply -f platforms-np-srv.yaml
+  33        0.454 kubectl get deployments
+  34        0.168 kubectl get services
+  35        0.356 kubectl ip
+  36        3.224 netstat -al | grep 30036
+  37        0.370 netstat -al | find 30794
+  38        0.100 netstat -aon | find 30794
+  39        0.103 netstat -aon | find "30794"
+  40        9.418 kubectl get pod -o wide
+  41        0.163 kubectl get service all-namespaces
+  42        0.141 kubectl get service -all-namespaces
+  43        0.132 kubectl get service -all
+  44        0.143 kubectl get service -all-namespaces
+  45        0.464 kubectl get --help
+  46        0.240 kubectl get service --all-namespaces
+  47        0.229 kubectl get services
+  48       13.503 kubectl delete deployment platforms-depl
+  49        1.307 kubectl delete svc platformnpservice-srv
+  50        0.520 docker images
+  51        0.510 docker rmi eliassal/platformservice
+  52        0.930 docker rm 385
+  53        1.177 docker rmi eliassal/platformservice
+  54        0.005 cd ..
+  55        0.010 ls
+  56        0.004 cd PlatformService
+  57       24.391 docker build -t eliassal/platformservice .
+  58     1:09.071 dotnet run
+  59        0.628 docker rmi eliassal/platformservice
+  60        9.278 docker build -t eliassal/platformservice .
+  61        0.004 cd ..
+  62        0.003 cd ..
+  63        0.009 ls
+  64        0.004 cd e3
+  65        0.006 ls
+  66        0.004 cd k8s
+  67        0.476 kubectl apply -f platform-depl.yaml
+  68        0.638 kubectl apply -f platforms-np-srv.yaml
+  69        0.162 kubectl get services
+  70        0.153 kubectl get deployments
+  71       10.190 kubectl get services
+  72        0.262 docker --version
+  73        0.048 history
+  74        4.895 docker push eliassal/platformservice
+  75        0.016 ls
+  76        0.005 cd ..
+  77        0.007 ls
+  78        0.006 cd PlatformService
+  79        0.015 ls
+  80     5:14.930 dotnet run
+  81       15.336 dotnet build
+  82       51.207 dotnet run
+  83        3.551 docker push eliassal/platformservice
+  84        0.014 ls
+  85        0.004 cd ..
+  86        0.007 ls
+  87        0.004 cd k8s
+  88       12.501 kubectl delete deployment platforms-depl
+  89        0.989 kubectl delete svc platformnpservice-srv
+  90        0.764 kubectl apply -f platform-depl.yaml
+  91        1.209 kubectl apply -f platforms-np-srv.yaml
+  92        0.280 kubectl get services
+  93        7.777 kubectl delete deployment platforms-depl
+  94        0.904 kubectl delete svc platformnpservice-srv
+  95        0.003 cd ..
+  96        0.006 ls
+  97        0.004 cd PlatformService
+  98        0.511 docker ps -a
+  99        2.780 docker run -p 8080:80  eliassal/platformnpservice
+ 100        0.486 docker images
+ 101     3:13.050 docker run -p 8080:80  eliassal/platformservice
+ 102        0.496 docker ps
+ 103        0.480 docker ps -a
+ 104        0.005 cd ..
+ 105        0.006 ls
+ 106        0.006 cd k8s
+ 107        0.598 kubectl apply -f platform-depl.yaml
+ 108        1.127 kubectl apply -f platforms-np-srv.yaml
+ 109        0.254 kubectl get services
+ 110       11.241 kubectl get svc
+ 111        0.174 kubectl get pods -o wide
+ 112        9.330 kubectl get deployments
+ 113        0.303 kubectl logs platforms-depl
+ 114        0.149 kubectl get pods
+ 115        0.448 kubectl logs platforms-depl-79d845bdc8-5724t
+ 116        0.519 docker ps -a
+ 117        0.749 docker rm 85132c0c83d9
+ 118        0.511 docker rmi eliassal/platformservice
+ 119        1.078 kubectl delete svc platformnpservice-srv
+ 120        0.189 kubectl delete deployment platforms-depl
+ 121        1.267 docker rmi eliassal/platformservice
+ 122        0.004 cd ..
+ 123        0.004 cd ..
+ 124        0.009 ls
+ 125        0.004 cd e3
+ 126        0.007 ls
+ 127        0.005 cd PlatformService
+ 128       32.616 docker build -t eliassal/platformservice .
+ 129     1:42.414 docker run -p 8080:80  eliassal/platformservice
+ 130        0.004 cd ..
+ 131        0.007 ls
+ 132        0.004 cd k8s
+ 133       10.230 kubectl apply -f platform-depl.yaml
+ 134        1.936 kubectl apply -f platforms-np-srv.yaml
+ 135        0.148 kubectl get svc
+ 136       10.819 kubectl delete deployment platforms-depl
+ 137        1.577 kubectl delete svc platformnpservice-srv
+ 138        0.467 kubectl apply -f platform-depl.yaml
+ 139        2.307 kubectl apply -f platforms-np-srv.yaml
+ 140        0.276 kubectl get svc
+ 141        0.166 kubectl get pods -o wide
+ 142        8.699 kubectl get pods -o wide
+ 143        9.559 kubectl describe node docker-for-desktop
+ 144        0.452 docker get nodes
+ 145        0.169 kubectl get nodes
+ 146        0.587 kubectl describe node docker-desktop
+ 147        0.148 curl localhost:30180
+ 148        0.160 kubectl get svc
+ 149        0.301 kubectl describe service platformnpservice-srv
+ 150       10.722 kubectl delete svc platformnpservice-srv
+ 151        0.372 kubectl apply -f platforms-lb-srv.yaml
+ 152        0.013 ls
+ 153        0.865 kubectl apply -f platforms-lb-srv.yaml
+ 154        0.340 kubectl get svc
+ 155        0.243 kubectl delete svc platform-lb-srv.yaml
+ 156        0.640 kubectl delete svc platformnpservice-lb-srv
+ 157        0.851 kubectl apply -f platforms-lb-srv.yaml
+ 158        0.159 kubectl get svc
+ 159        0.162 kubectl get svc
+ 160        0.302 kubectl describe services platformnpservice-lb-srv
+ 161        9.314 kubectl delete svc platformnpservice-lb-srv
+ 162        0.957 kubectl apply -f platforms-lb-srv.yaml
+ 163        0.151 kubectl get svc
+ 164        0.242 kubectl describe services platformnpservice-lb-srv
+ 165        0.706 kubectl delete svc platformnpservice-lb-srv
+ 166        0.181 kubectl delete svc platformnpservice-srv
+ 167        0.229 kubectl delete deployment platforms-depl
+ 168        0.149 kubectl delete deployment platforms-depl
+ 169        0.526 kubectl apply -f platform-depl.yaml
+ 170        1.189 kubectl apply -f platforms-lb-srv.yaml
+ 171        0.140 kubectl get svc
+ 172        0.678 kubectl delete svc platformnpservice-lb-srv
+ 173        0.774 kubectl apply -f platforms-lb-srv.yaml
+ 174        0.242 kubectl get svc
+ 175        8.739 kubectl delete svc platformnpservice-lb-srv
+ 176        1.085 history
+ 
+ Id     Duration CommandLine
+  --     -------- -----------
+   1        8.240 kubectl delete platforms-depl
+   2        1.686 k get deployments
+   3        7.734 kubectl delete deplyment platforms-depl
+   4       25.985 kubectl delete deplyment platforms-depl
+   5        7.208 kubectl delete deplyment platforms-depl
+   6        0.400 kubectl delete deployment platforms-depl
+   7        0.028 ls
+   8        0.006 cd k8s
+   9        8.297 kubectl apply -f platform-depl.yaml
+  10        1.130 kubectl apply -f platforms-np-srv.yaml
+  11        0.159 kubectl get svc
+
+
