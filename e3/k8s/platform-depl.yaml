@@ -13,7 +13,7 @@ spec:
         app: platformservice
     spec:
       containers:
-        - name: platformservice
-          ports:
-            - containerPort: 80
-          image: eliassal/platformservice:latest
+      - name: platformservice
+        ports:
+          - containerPort: 80
+        image: eliassal/platformservice:latest        
